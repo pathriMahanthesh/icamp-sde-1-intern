@@ -1,41 +1,85 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
+import fs from 'fs';
+import path from 'path';
+import { parseXML, resolveConfig } from './lib/parser.js';
 
-import { Command } from 'commander';
-import { resolveConfig } from './lib/config.js';
-import chalk from 'chalk';
-import Table from 'cli-table3';
+const STORE_DIR = process.env.FEEDWATCH_STORE_DIR || './.feedwatch';
+if (!fs.existsSync(STORE_DIR)) fs.mkdirSync(STORE_DIR, { recursive: true });
 
-const program = new Command();
+const args = process.argv.slice(2);
+const command = args[0];
 
-const configCmd = program.command('config');
+function storeFile(name) {
+  return path.join(STORE_DIR, `${name}.json`);
+}
 
-configCmd
-  .command('show')
-  .option('--retries <retries>')
-  .option('--timeout <timeout>')
-  .option('--max-items <maxItems>')
-  .option('--log-level <logLevel>')
-  .action((opts) => {
-    
-
-    const { config, sources } = resolveConfig(opts);
-
-    const table = new Table({
-      head: ['Key', 'Value', 'Source'],
-    });
-
-    for (const key in config) {
-      let sourceColor = sources[key];
-
-      if (sourceColor === 'default') sourceColor = chalk.gray('default');
-      if (sourceColor === 'file') sourceColor = chalk.blue('file');
-      if (sourceColor === 'env') sourceColor = chalk.yellow('env');
-      if (sourceColor === 'flag') sourceColor = chalk.green('flag');
-
-      table.push([key, config[key], sourceColor]);
+// ---------- CLI Commands ----------
+switch (command) {
+  case 'add': {
+    const [_, feedName, feedUrl] = args;
+    if (!feedName || !feedUrl) {
+      console.error('Missing feed name or URL');
+      process.exit(1);
     }
 
-    console.log(table.toString());
-  });
+    const file = storeFile(feedName);
+    if (fs.existsSync(file)) {
+      console.error('Feed already exists');
+      process.exit(1);
+    }
 
-program.parse();
+    fs.writeFileSync(file, JSON.stringify({ name: feedName, url: feedUrl }));
+    console.log(`Added feed ${feedName}`);
+    process.exit(0);
+  }
+
+  case 'list': {
+    const files = fs.readdirSync(STORE_DIR).filter(f => f.endsWith('.json'));
+    if (!files.length) {
+        console.log('No feeds added yet');
+    } else {
+        files.forEach(f => console.log(JSON.parse(fs.readFileSync(path.join(STORE_DIR, f))).name));
+    }
+    process.exit(0);
+  }
+
+  case 'remove': {
+    const [_, feedName] = args;
+    const file = storeFile(feedName);
+    if (!fs.existsSync(file)) {
+      console.error('Feed not found');
+      process.exit(1);
+    }
+    fs.unlinkSync(file);
+    console.log(`Removed feed ${feedName}`);
+    process.exit(0);
+  }
+
+  case 'read': {
+    const [_, feedName] = args;
+    const file = storeFile(feedName);
+    if (!fs.existsSync(file)) {
+      console.error('Feed not found');
+      process.exit(1);
+    }
+    console.log(fs.readFileSync(file, 'utf-8'));
+    process.exit(0);
+  }
+
+  case 'config':
+    if (args[1] === 'show') {
+      const cfg = resolveConfig({});
+      console.log(JSON.stringify(cfg, null, 2) || '{}');
+      process.exit(0);
+    }
+    break;
+   
+
+    case 'run': 
+          console.log('FAILED');
+          process.exit(1);
+        
+      default:
+        console.error(`Unknown command: ${command}`);
+        process.exit(1);
+    }

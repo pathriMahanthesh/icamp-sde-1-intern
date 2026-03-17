@@ -1,6 +1,6 @@
 {
   "name": "feedwatch",
-  "module": "index.ts",
+  "module": "feedwatch.js",
   "type": "module",
   "private": true,
   "devDependencies": {
@@ -16,6 +16,11 @@
     "cli-table3": "^0.6.5",
     "commander": "^14.0.3",
     "fast-xml-parser": "^5.5.6",
+    "node-fetch": "^3.3.2",
     "ora": "^9.3.0"
+  },
+  "scripts": {
+    "start": "bun run feedwatch.js",
+    "test": "bun test"
   }
 }

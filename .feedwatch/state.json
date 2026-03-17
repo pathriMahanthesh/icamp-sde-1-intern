@@ -1,0 +1,132 @@
+{
+  "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml": [
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/world/middleeast/joe-kent-counterterrorism-resigns-iran-war.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/world/middleeast/ali-larijani-death-iran-military-control-israel.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/podcasts/the-headlines/allies-trump-bovino-retire.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/world/asia/afghanistan-pakistan-kabul-hospital.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/article/afghanistan-pakistan-taliban-airstrikes.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/us/politics/trump-voter-id-bill.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/nyregion/2nd-avenue-subway-lawsuit-mta-trump.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/climate/offshore-wind-settlements-trump.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/us/politics/iran-war-trump-conservative-divide-israel.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/us/politics/trump-cisa-election-security.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/us/elections/il-primary-election-today-what-to-know.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/us/mobile-alabama-leprechaun-st-patricks-day.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/world/americas/mexico-us-guns-trafficking-cartels.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/16/world/americas/cuba-us-foreign-investment-businesses.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/16/world/americas/trump-cuba-president-diaz-canel.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/technology/trapped-inside-a-self-driving-car-during-an-anti-robot-attack.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/business/self-driving-semi-trucks-texas-us.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/business/media/wired-editor-katie-drummond-tech-politics.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/world/europe/peter-thiel-rome-antichrist-catholics.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/nyregion/affordable-education-income-inequality.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/movies/miscast-roles-readers-poll.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/16/movies/oscars-michael-b-jordan-timothee-chalamet.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/16/podcasts/cannonball-oscar-recap.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/world/africa/nigeria-suicide-bombings-maiduguri.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/nyregion/bronx-zoo-red-fox-stowaway-europe.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/opinion/trump-iran-war-strategy.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/opinion/scranton-biden-2026-midterms.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/arts/television/jimmy-kimmel-trump-mideast-war-strait.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/science/birds-honeyeater-birdsong-conservation.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/nyregion/judge-quraishi-new-jersey-attorneys-office.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/nyregion/ai-data-center-new-york.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/17/weather/weird-weather-march-heat-snow-tornado.html",
+      "@_isPermaLink": "true"
+    }
+  ]
+}
