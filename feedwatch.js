@@ -1,6 +1,7 @@
 #!/usr/bin/env bun
 import fs from 'fs';
 import path from 'path';
+import { runCommand } from './commands/run.js';
 import { parseXML, resolveConfig } from './lib/parser.js';
 
 const STORE_DIR = process.env.FEEDWATCH_STORE_DIR || './.feedwatch';
@@ -75,11 +76,20 @@ switch (command) {
     break;
    
 
-    case 'run': 
-          console.log('FAILED');
-          process.exit(1);
-        
-      default:
-        console.error(`Unknown command: ${command}`);
-        process.exit(1);
-    }
+  case 'run': {
+    const options = {
+      json: args.includes('--json'),
+      all: args.includes('--all'),
+    };
+
+    const exitCode = await runCommand(options);
+    if (exitCode === 1) {
+  process.exit(1);
+}
+  process.exit(1);
+  }
+
+  default:
+    console.error(`Unknown command: ${command}`);
+    process.exit(1);
+}

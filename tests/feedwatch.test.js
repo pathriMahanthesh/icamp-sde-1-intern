@@ -68,14 +68,17 @@ describe('Parser Unit Tests', () => {
 // ---------- Integration Helper ----------
 const PROJECT_ROOT = path.resolve('.');
 function run(args, opts = {}) {
-    return spawnSync('bun', ['feedwatch.js', ...args], {
-      cwd: PROJECT_ROOT,
-      encoding: 'utf8',
-      timeout: 10000,
-      env: { ...process.env, FEEDWATCH_STORE_DIR: opts.storeDir, ...opts.env },
-      ...opts,
-    });
-  }
+  return spawnSync('bun', ['feedwatch.js', ...args], {
+    cwd: PROJECT_ROOT,
+    encoding: 'utf8',
+    timeout: 10000,
+    env: {
+      ...process.env,
+      FEEDWATCH_STORE_DIR: opts.storeDir || tmpDir,
+      ...(opts.env || {}),   // ✅ merge custom env properly
+    },
+  });
+}
 
 // ---------- Integration Tests ----------
 describe('Integration Tests', () => {

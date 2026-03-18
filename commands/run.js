@@ -4,17 +4,37 @@ import { loadState, saveState } from '../lib/state.js';
 import fs from 'fs';
 import chalk from 'chalk';
 
-const FEEDS_FILE = '.feedwatch/feeds.json';
-
 export async function runCommand(options) {
+  const STORE_DIR = process.env.FEEDWATCH_STORE_DIR || './.feedwatch';
+
   let feeds = [];
 
-  // Load feeds
   try {
-    feeds = JSON.parse(fs.readFileSync(FEEDS_FILE, 'utf8'));
+    const files = fs
+  .readdirSync(STORE_DIR)
+  .filter(f => f.endsWith('.json') && f !== 'state.json');
+
+    feeds = [];
+
+for (const file of files) {
+  const content = fs.readFileSync(`${STORE_DIR}/${file}`, 'utf8');
+  const parsed = JSON.parse(content);
+
+  if (Array.isArray(parsed)) {
+    feeds.push(...parsed); // flatten array
+  } else {
+    feeds.push(parsed); // single object
+  }
+}
+
+    if (feeds.length === 0) {
+      if (!options.json) console.log('No feeds found.');
+      return 0;
+    }
+
   } catch {
-    console.log('No feeds found.');
-    process.exit(0);
+    if (!options.json) console.log('No feeds found.');
+    return 0;
   }
 
   const state = loadState();
@@ -22,53 +42,65 @@ export async function runCommand(options) {
   let hasFailed = false;
 
   for (const feed of feeds) {
-    console.log(`\nFeed: ${feed.url}`);
-    const feedResult = { name: feed.url, items: [], failed: false };
+    const result = { name: feed?.name || feed?.url || 'Unknown Feed' };
 
     try {
       const xml = await fetchFeed(feed.url);
       const items = parseXML(xml);
       const seen = state[feed.url] || [];
 
-      for (const item of items) {
+      const processedItems = items.map(item => {
         const isSeen = seen.includes(item.guid);
-        const status = isSeen ? 'SEEN' : 'NEW';
-
-        feedResult.items.push({
+        return {
           title: item.title,
           guid: item.guid,
-          status,
+          status: isSeen ? 'SEEN' : 'NEW',
           pubDate: item.pubDate,
           link: item.link,
-        });
+        };
+      });
 
-        // Default: only show NEW unless --all
-        if (!isSeen || options.all) {
-          const line = `[${status}] ${item.title}`;
-          console.log(
-            status === 'NEW' ? chalk.green(line) : chalk.gray(line)
-          );
+      result.status = 'ok';
+      result.items = processedItems;
+
+      // Print output (non-JSON mode)
+      if (!options.json) {
+        console.log(`\nFeed: ${feed.name || feed.url}`);
+        for (const item of processedItems) {
+          if (item.status === 'NEW' || options.all) {
+            const line = `[${item.status}] ${item.title}`;
+            console.log(
+              item.status === 'NEW'
+                ? chalk.green(line)
+                : chalk.gray(line)
+            );
+          }
         }
       }
 
       // Update state
       state[feed.url] = items.map(i => i.guid);
+
     } catch (err) {
-      feedResult.failed = true;
       hasFailed = true;
-      console.log(chalk.red(`[FAILED] ${feed.url}`));
+
+      result.status = 'failed';
+      result.error = err.message;
+
+      if (!options.json) {
+        console.log(chalk.red(`[FAILED] ${feed?.name || feed?.url || 'Unknown Feed'}`));
+      }
     }
 
-    results.push(feedResult);
+    results.push(result);
   }
 
   saveState(state);
 
-  // Handle --json
+  // JSON output
   if (options.json) {
     console.log(JSON.stringify(results, null, 2));
   }
 
-  // Exit code: 1 if any feed failed
-  process.exit(hasFailed ? 1 : 0);
+  return hasFailed ? 1 : 0;
 }
