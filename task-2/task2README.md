@@ -41,116 +41,112 @@ task-2/
 ├── board.js          # DOM rendering logic
 ├── events.js         # Event handling and UI interactions
 ├── .env.example      # Environment variables template (empty)
-├── README.md         # Project documentation
+├── task2README.md         # Project documentation
 └── WRITEUP.md        # Detailed explanation of approach and design
 ```
 ---
 
 ## ⚙️ Installation & Running
 
-1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone <your-repo-url>
 cd icamp-sde-1-intern/task-2
-2. Run the application
-Option A: Using Live Server (Recommended)
+```
 
-Open the project in VS Code
+---
 
-Right-click on index.html
+### 2. Run the Application
 
-Click "Open with Live Server"
+#### ✅ Option A: Using Live Server (Recommended)
 
-Option B: Open directly in browser
+- Open the project in **VS Code**
+- Right-click on `index.html`
+- Click **"Open with Live Server"**
 
-Double-click index.html
+---
 
-Or open it manually in any modern browser
+#### ✅ Option B: Open Directly in Browser
 
-Note: Running via a local server is recommended to avoid CORS-related issues.
+- Double-click `index.html`  
+- Or open it manually in any modern browser  
 
-🔧 Environment Variables
+> Note: Running via a local server is recommended to avoid CORS-related issues.
+
+---
+
+## 🔧 Environment Variables
 
 This project does not require any environment variables.
 
-A .env.example file is included for compliance but remains empty.
+A `.env.example` file is included for compliance but remains empty.
 
-🧠 How It Works
-State Management (state.js)
+---
 
-Maintains a single source of truth for the application
+## 🧠 How It Works
 
-All updates go through defined state mutation functions
+### State Management (`state.js`)
 
-Automatically persists data to localStorage after every change
+- Maintains a single source of truth for the application  
+- All updates go through defined state mutation functions  
+- Automatically persists data to `localStorage` after every change  
+- Loads existing state on startup or initializes default state  
 
-Loads existing state on startup or initializes default state
+---
 
-Rendering (board.js)
+### Rendering (`board.js`)
 
-renderBoard() rebuilds the entire UI from the current state
+- `renderBoard()` rebuilds the entire UI from the current state  
+- Ensures UI consistency after every update  
+- No partial DOM updates or caching are used  
 
-Ensures UI consistency after every update
+---
 
-No partial DOM updates or caching
+### Event Handling (`events.js`)
 
-Event Handling (events.js)
+- Uses **event delegation** with a single listener on the board container  
+- Handles:
+  - Column actions (add, rename, delete)  
+  - Card actions (add, edit, delete, move)  
+- Supports inline forms for improved user experience  
 
-Uses event delegation with a single listener on the board container
+---
 
-Handles:
+### Filtering
 
-Column actions (add, rename, delete)
+- Implemented without modifying the underlying state  
+- Operates directly on the DOM  
+- Automatically re-applied after each render  
 
-Card actions (add, edit, delete, move)
+---
 
-Supports inline forms for better UX
+## ⚠️ Edge Cases Handled
 
-Filtering
+- Prevent adding columns/cards with empty titles  
+- Inline validation with user feedback  
+- Cancel actions restore previous UI state  
+- Only one inline form is allowed at a time  
+- Safe deletion with confirmation dialogs  
+- Card movement restricted within valid column boundaries  
+- Filtering works dynamically with re-renders  
 
-Implemented without modifying the underlying state
+---
 
-Operates directly on the DOM
+## 🧪 Notes
 
-Automatically re-applied after each render
+- No external libraries are used  
+- Built entirely using ES Modules and native DOM APIs  
+- Fully client-side application  
+- No backend required  
 
-⚠️ Edge Cases Handled
+---
 
-Prevent adding columns/cards with empty titles
-
-Inline validation with user feedback
-
-Cancel actions restore previous UI state
-
-Only one inline form is allowed at a time
-
-Safe deletion with confirmation dialogs
-
-Card movement restricted within valid column boundaries
-
-Filtering works dynamically with re-renders
-
-🧪 Notes
-
-No external libraries are used
-
-Built entirely using ES Modules and native DOM APIs
-
-Fully client-side application
-
-No backend required
-
-🚀 Conclusion
+## 🚀 Conclusion
 
 This project demonstrates:
 
-Clean separation of concerns (state, rendering, events)
-
-Efficient DOM manipulation
-
-Proper use of event delegation
-
-Persistent client-side state management
-
-Modular and maintainable code structure
+- Clean separation of concerns (state, rendering, events)  
+- Efficient DOM manipulation  
+- Proper use of event delegation  
+- Persistent client-side state management  
