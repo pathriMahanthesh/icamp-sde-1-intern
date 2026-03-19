@@ -35,12 +35,15 @@ This project is a fully client-side Kanban board built using **vanilla JavaScrip
 
 
 task-2/
-index.html # Entry HTML file
-style.css # Styles
-main.js # App entry point
-state.js # State management and localStorage persistence
-board.js # DOM rendering logic
-events.js # Event handling and UI interactions
+├── index.html # Entry HTML file
+├── style.css # Styles for the UI
+├── main.js # Application entry point
+├── state.js # State management and localStorage persistence
+├── board.js # DOM rendering logic
+├── events.js # Event handling and UI interactions
+├── .env.example # Environment variables template (empty)
+├── README.md # Project documentation
+└── WRITEUP.md # Detailed explanation of approach and design
 
 
 ---
