@@ -76,6 +76,8 @@ Supports both RSS and Atom formats
 
 Designed for reliability and clean CLI experience
 
+Commit history includes iterative development with ticket-based commits and feature-level updates.
+
 👨‍💻 Author
 
 Pathri Mahanthesh
