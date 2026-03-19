@@ -1,63 +1,63 @@
 {
   "https://news.ycombinator.com/rss": [
+    "https://rjcorwin.github.io/cook/",
+    "https://lcamtuf.substack.com/p/conways-game-of-life-in-real-life",
+    "https://gitlab.com/IsolatedOctopi/nvidia_greenboost",
+    "https://nearzero.software/p/warranty-void-if-regenerated",
+    "https://openrocket.info/",
+    "https://haskellforall.com/2026/03/a-sufficiently-detailed-spec-is-code",
+    "https://github.com/iliazintchenko/agent-sat",
+    "https://www.brzozowski.io/web-applications/2025/03/11/why-cloudflare-rule-order-matters.html",
+    "https://colossus.com/article/we-have-learned-nothing-startup-pundits/",
+    "https://computer.rip/2026-03-14-lotusnotes.html",
+    "https://www.pew.org/en/research-and-analysis/articles/2026/03/18/austins-surge-of-new-housing-construction-drove-down-rents",
+    "https://susam.net/wander/",
+    "https://github.com/alainnothere/llm-circuit-finder",
+    "https://github.com/creationix/rx",
+    "https://github.com/NVIDIA/NemoClaw",
+    "https://www.quantamagazine.org/the-math-that-explains-why-bell-curves-are-everywhere-20260316/",
+    "https://cyberinsider.com/mozilla-to-launch-free-built-in-vpn-in-upcoming-firefox-149/",
+    "https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/",
+    "https://news.ycombinator.com/item?id=47428650",
+    "https://borderhold.io/play",
+    "https://mlbenchmarks.org/00-preface.html",
+    "https://www.panoit.com",
+    "https://om.co/2026/03/17/openai-has-new-focus-on-the-ipo/",
+    "https://www.anthropic.com/features/81k-interviews",
     "https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html",
-    "https://whois.domaintools.com/aliens.gov",
-    "https://nightingale.cafe/",
-    "https://machinelearningplus.com/python/101-pandas-exercises-python-interactive/",
-    "https://www.sophielwang.com/blog/jpeg",
-    "https://willwarren.com/2026/03/12/building-my-own-cpu-part-3-from-simulation-to-hardware/",
-    "https://mistral.ai/news/forge",
-    "https://hidden-phenomena.com/articles/hensels",
-    "https://terathon.com/blog/decade-slug.html",
-    "https://www.tomshardware.com/3d-printing/tech-hobbyist-makes-shoulder-mounted-guided-missile-prototype-with-usd96-in-parts-and-a-3d-printer-diy-manpads-includes-wi-fi-guidance-ballistics-calculations-optional-camera-for-tracking",
-    "https://bertrandmeyer.com/2026/03/16/celebrating-tony-hoares-mark-on-computer-science/",
-    "https://www.tomshardware.com/video-games/console-gaming/microsofts-unhackable-xbox-one-has-been-hacked-by-bliss-the-2013-console-finally-fell-to-voltage-glitching-allowing-the-loading-of-unsigned-code-at-every-level",
-    "https://eon.systems/updates/embodied-brain-emulation",
-    "https://moq.dev/blog/on-a-boat/",
-    "https://oseifert.ch/blog/building-pgit",
-    "https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design",
-    "https://fidget-spinner.github.io/posts/jit-on-track.html",
-    "https://ndea.com/jobs/search-guidance",
-    "https://github.com/gsd-build/get-shit-done",
-    "https://spaceweather.com/archive.php?view=1&day=18&month=03&year=2026",
-    "https://openhardware.directory",
-    "https://github.com/adammiribyan/zeroboot",
-    "https://www.wsj.com/business/trevor-milton-pardon-nikola-trump-3163e19c",
-    "https://www.otherstrangeness.com/2026/03/14/have-a-fucking-website/",
-    "https://unsloth.ai/docs/new/studio",
-    "https://rovarma.com/articles/a-tale-about-fixing-ebpf-spinlock-issues-in-the-linux-kernel/",
-    "https://www.youtube.com/watch?v=3Ploi723hg4",
-    "https://news.cornell.edu/stories/2026/03/electron-microscopy-shows-mouse-bite-defects-semiconductors",
-    "https://phys.org/news/2026-03-ryugu-asteroid-samples-dna-rna.html",
-    "https://arxiv.org/abs/2603.15381"
+    "https://www.smithsonianmag.com/smart-news/a-czech-man-used-this-stone-in-his-barns-foundations-it-turned-out-to-be-rare-bronze-age-spearhead-mold-180988339/",
+    "https://blog.qualys.com/vulnerabilities-threat-research/2026/03/17/cve-2026-3888-important-snap-flaw-enables-local-privilege-escalation-to-root",
+    "https://www.mattkeeter.com/blog/2026-03-15-uxn/",
+    "https://whatsonhttp.com/",
+    "https://spectrum.ieee.org/eniac-80-ieee-milestone"
   ],
   "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml": [
     {
-      "#text": "https://www.nytimes.com/2026/03/18/world/middleeast/israel-strikes-iran-war-regime-change.html",
+      "#text": "https://www.nytimes.com/2026/03/18/us/politics/tulsi-gabbard-iran-trump.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/world/asia/trump-japan-takaichi-iran-hormuz.html",
+      "#text": "https://www.nytimes.com/2026/03/19/business/iran-war-fiscal-spending-debt.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/17/us/politics/kharg-island-iran-trump-risks.html",
+      "#text": "https://www.nytimes.com/2026/03/18/us/israel-us-iran-strategy-war.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/podcasts/the-headlines/israel-iran-trump-joe-kent-resign.html",
+      "#text": "https://www.nytimes.com/2026/03/18/climate/mullin-fema-noem-delays.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/world/europe/trumprx-drug-prices-really-cheapest-world-comparison.html",
+      "#text": "https://www.nytimes.com/2026/03/18/arts/design/trump-america-250-year-anniversary-plan.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/us/politics/jan-6-contracts.html",
+      "#text": "https://www.nytimes.com/2026/03/18/us/politics/pam-bondi-house-oversight-epstein-files.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/02/17/insider/congressional-hearing-insider.html",
+      "#text": "https://www.nytimes.com/2026/03/18/us/family-minneapolis-boy-ice-deportation.html",
       "@_isPermaLink": "true"
     },
     {
@@ -65,67 +65,75 @@
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/us/cesar-chavez-sexual-assault-allegations-takeaways.html",
-      "@_isPermaLink": "true"
-    },
-    {
-      "#text": "https://www.nytimes.com/2026/03/18/us/elections/illinois-primary-elections-takeaways.html",
-      "@_isPermaLink": "true"
-    },
-    {
-      "#text": "https://www.nytimes.com/2026/03/18/us/elections/jb-pritzker-juliana-stratton.html",
-      "@_isPermaLink": "true"
-    },
-    {
-      "#text": "https://www.nytimes.com/2026/03/18/briefing/changing-how-we-vote.html",
-      "@_isPermaLink": "true"
-    },
-    {
-      "#text": "https://www.nytimes.com/2026/03/18/business/media/jeffrey-epstein-online.html",
-      "@_isPermaLink": "true"
-    },
-    {
       "#text": "https://www.nytimes.com/2026/03/18/business/federal-reserve-interest-rates-inflation.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/technology/silicon-valley-war-defense-tech.html",
+      "#text": "https://www.nytimes.com/2026/03/18/business/economy/fed-chair-powell-warsh-trump.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/world/europe/russia-ukraine-prisoner-benefits.html",
+      "#text": "https://www.nytimes.com/2026/03/18/business/economy/us-trade-deficit-ai-boom.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/us/california-winter-heat-wave.html",
+      "#text": "https://www.nytimes.com/2026/03/19/health/ozempic-wegovy-generic-india-china-canada.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/arts/design/gardner-museum-heist-theories.html",
+      "#text": "https://www.nytimes.com/2026/03/18/us/politics/trump-republicans-ban-mail-voting.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/opinion/economy-us-trump-biden.html",
+      "#text": "https://www.nytimes.com/2026/03/18/us/elections/juliana-stratton-pritzker-il-victory.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/opinion/trump-save-america-act.html",
+      "#text": "https://www.nytimes.com/2026/03/18/world/middleeast/west-bank-sexual-assault-israel-settlers.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/arts/television/late-night-trump-iran.html",
+      "#text": "https://www.nytimes.com/2026/03/19/world/europe/germany-far-right-afd.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/technology/turing-award-winners-quantum-cryptography.html",
+      "#text": "https://www.nytimes.com/2026/03/18/technology/silicon-valley-anthropic-pentagon.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/17/world/americas/colombia-ecuador-bomb-petro-noboa.html",
+      "#text": "https://www.nytimes.com/2026/03/18/technology/google-ai-pentagon.html",
       "@_isPermaLink": "true"
     },
     {
-      "#text": "https://www.nytimes.com/2026/03/18/nyregion/times-square-cannabis-army.html",
+      "#text": "https://www.nytimes.com/2026/03/18/world/americas/montserrat-st-patricks-day.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/18/arts/carol-kitman-dead.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/18/opinion/trump-iran-war.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/18/opinion/joe-kent-israel-iran.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/19/arts/television/late-night-dueling-senators.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/18/us/joseph-duggar-arrest-child-sex-abuse.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/18/science/comet-fragments-hubble-telescope.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/18/nyregion/nyc-bank-robber-chase.html",
       "@_isPermaLink": "true"
     }
   ]
