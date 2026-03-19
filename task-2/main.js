@@ -5,3 +5,4 @@ import { initEvents } from './events.js';
 loadState();
 renderBoard();
 initEvents();
+
