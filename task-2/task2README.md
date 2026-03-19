@@ -1,130 +1,155 @@
 # Kanban Board (Task 2)
 
-## Overview
+## 📌 Overview
 
 This project is a fully client-side Kanban board built using **vanilla JavaScript**, **ES Modules**, and **DOM APIs**. It allows users to manage tasks across multiple columns with full CRUD functionality and persistent state using `localStorage`.
 
 ---
 
-## Features
+## ✨ Features
 
 ### Columns
-
-* Add new columns
-* Rename existing columns
-* Delete columns (with confirmation if cards exist)
+- Add new columns  
+- Rename existing columns  
+- Delete columns (with confirmation if cards exist)
 
 ### Cards
-
-* Add cards with title and description
-* Edit card details inline
-* Delete cards (with confirmation)
-* Move cards between columns (left/right)
+- Add cards with title and description  
+- Edit card details inline  
+- Delete cards (with confirmation)  
+- Move cards between columns (left/right)
 
 ### Persistence
-
-* All data is stored in `localStorage`
-* State persists across page reloads
+- All data is stored in `localStorage`  
+- State persists across page reloads  
 
 ### Filtering
-
-* Real-time search by card title
-* Case-insensitive filtering
-* Columns dim when no visible cards match
-* Filtering does not modify state
+- Real-time search by card title  
+- Case-insensitive filtering  
+- Columns dim when no visible cards match  
+- Filtering does not modify the underlying state  
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
-```
+
 task-2/
-  index.html       # Entry HTML file
-  style.css        # Styles (basic or optional)
-  main.js          # App entry point
-  state.js         # State management and localStorage persistence
-  board.js         # DOM rendering logic
-  events.js        # Event handling and UI interactions
-```
+index.html # Entry HTML file
+style.css # Styles
+main.js # App entry point
+state.js # State management and localStorage persistence
+board.js # DOM rendering logic
+events.js # Event handling and UI interactions
+
 
 ---
 
-## Installation & Running
+## ⚙️ Installation & Running
 
-1. Clone the repository:
+### 1. Clone the repository
 
-   ```bash
-   git clone <your-forked-repo-url>
-   cd icamp-sde-1-intern/task-2
-   ```
+```bash
+git clone <your-repo-url>
+cd icamp-sde-1-intern/task-2
+2. Run the application
+Option A: Using Live Server (Recommended)
 
-2. Open in browser:
+Open the project in VS Code
 
-   * Using VS Code Live Server (recommended)
-   * Open `index.html` directly in browser
+Right-click on index.html
 
----
+Click "Open with Live Server"
 
-## How It Works
+Option B: Open directly in browser
 
-### State Management (`state.js`)
+Double-click index.html
 
-* Maintains a single source of truth
-* All mutations go through defined functions
-* Automatically saves to `localStorage` after every update
-* Loads from `localStorage` on startup or uses default seed
+Or open it manually in any modern browser
 
-### Rendering (`board.js`)
+Note: Running via a local server is recommended to avoid CORS-related issues.
 
-* `renderBoard()` rebuilds the entire UI from state
-* No DOM caching or partial updates
-* Ensures consistent UI after every state change
+🔧 Environment Variables
 
-### Events (`events.js`)
+This project does not require any environment variables.
 
-* Uses **event delegation** with a single event listener on `#board`
-* Handles all interactions:
+A .env.example file is included for compliance but remains empty.
 
-  * Column actions (add, rename, delete)
-  * Card actions (add, edit, delete, move)
-* Inline forms used for adding/editing cards
+🧠 How It Works
+State Management (state.js)
 
-### Filtering
+Maintains a single source of truth for the application
 
-* Implemented without modifying state
-* Operates directly on DOM
-* Re-applied after every render
+All updates go through defined state mutation functions
 
----
+Automatically persists data to localStorage after every change
 
-## Edge Cases Handled
+Loads existing state on startup or initializes default state
 
-* Prevent adding columns/cards with empty titles
-* Inline validation with error messages
-* Cancel actions restore previous UI state
-* Only one inline form allowed at a time
-* Safe deletion with confirmation dialogs
-* Card movement constrained within column boundaries
-* Filtering works with dynamic updates and re-renders
+Rendering (board.js)
 
----
+renderBoard() rebuilds the entire UI from the current state
 
-## Commands / Notes
+Ensures UI consistency after every update
 
-* No external libraries used
-* Only ES Modules and native DOM APIs
-* No `.env` variables required (included `.env.example` for compliance)
+No partial DOM updates or caching
 
----
+Event Handling (events.js)
 
-## Conclusion
+Uses event delegation with a single listener on the board container
+
+Handles:
+
+Column actions (add, rename, delete)
+
+Card actions (add, edit, delete, move)
+
+Supports inline forms for better UX
+
+Filtering
+
+Implemented without modifying the underlying state
+
+Operates directly on the DOM
+
+Automatically re-applied after each render
+
+⚠️ Edge Cases Handled
+
+Prevent adding columns/cards with empty titles
+
+Inline validation with user feedback
+
+Cancel actions restore previous UI state
+
+Only one inline form is allowed at a time
+
+Safe deletion with confirmation dialogs
+
+Card movement restricted within valid column boundaries
+
+Filtering works dynamically with re-renders
+
+🧪 Notes
+
+No external libraries are used
+
+Built entirely using ES Modules and native DOM APIs
+
+Fully client-side application
+
+No backend required
+
+🚀 Conclusion
 
 This project demonstrates:
 
-* Clean separation of concerns (state, rendering, events)
-* Proper use of event delegation
-* Dynamic DOM manipulation
-* Persistent client-side state management
+Clean separation of concerns (state, rendering, events)
 
----
+Efficient DOM manipulation
 
+Proper use of event delegation
+
+Persistent client-side state management
+
+Modular and maintainable code structure
