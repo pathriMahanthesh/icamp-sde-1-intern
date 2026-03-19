@@ -129,7 +129,8 @@ But a `.env.example` file is included for compliance.
 - No external libraries are used  
 - Built entirely using ES Modules and native DOM APIs  
 - Fully client-side application  
-- No backend required  
+- No backend required
+- Commit history includes iterative development with ticket-based commits and feature-level updates.
 
 ---
 
