@@ -60,7 +60,7 @@ task-2/
 
 2. Open in browser:
 
-   * Using VS Code Live Server (recommended), OR
+   * Using VS Code Live Server (recommended)
    * Open `index.html` directly in browser
 
 ---
