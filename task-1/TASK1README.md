@@ -17,7 +17,8 @@ FeedWatch is a simple CLI tool to track RSS/Atom feeds and display new updates d
 
 ```bash
 git clone <your-repo-link>
-cd feedwatch
+cd icamp-sde-1-intern
+cd task-1
 npm install
 
 ⚙️ Usage
