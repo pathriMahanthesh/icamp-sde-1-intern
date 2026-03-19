@@ -1,12 +1,12 @@
 import {
   addColumn,
-  removeColumn,   // 👈 THIS WAS MISSING
+  removeColumn,   
   renameColumn,
   addCard,
   updateCard,
   removeCard,
   moveCard,
-  getState        // also needed
+  getState        
 } from './state.js';
 import { renderBoard } from './board.js';
 
@@ -18,7 +18,7 @@ function getColumnId(el) {
 function closeOpenForms() {
   const existingForm = document.querySelector('.inline-form');
   if (existingForm) {
-    renderBoard(); // simplest way to reset UI
+    renderBoard(); 
   }
 }
 
