@@ -134,3 +134,4 @@ export function moveCard(cardId, direction) {
   state.columns[targetIndex].cards.push(cardToMove);
   saveState();
 }
+
