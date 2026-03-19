@@ -33,21 +33,3 @@ With more time, I would improve the project in several ways. First, I would enha
 I would also consider adding features like pagination, filtering by date, or keyword-based search to make the tool more powerful. Another improvement would be to replace file-based storage with a lightweight database for better scalability. Finally, I would optimize performance by introducing parallel fetching of feeds instead of processing them sequentially.
 
 ---
-
-## Commit Index
-
-The implementation was completed incrementally based on the given tickets:
-
-- Ticket 1.1 – XML Parser implementation  
-- Ticket 1.2 – Add, List, Remove commands  
-- Ticket 1.3 – Read command  
-- Ticket 1.4 – Fetcher implementation  
-- Ticket 1.5 – Integration tests  
-- Ticket 1.6 – Configuration using environment variables  
-- Ticket 1.7 – Run command (core functionality)  
-- Ticket 1.8 – State management (tracking seen items)  
-- Ticket 1.9 – Error handling and stability improvements  
-
-All changes have been committed and pushed to the `main` branch in the repository.
-
----
