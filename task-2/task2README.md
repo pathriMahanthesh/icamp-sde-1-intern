@@ -59,7 +59,7 @@ cd icamp-sde-1-intern/task-2
 
 ### 2. Run the Application
 
-#### ✅ Option A: Using Live Server (Recommended)
+#### ✅Using Live Server (Recommended)
 
 - Open the project in **VS Code**
 - Right-click on `index.html`
@@ -67,20 +67,11 @@ cd icamp-sde-1-intern/task-2
 
 ---
 
-#### ✅ Option B: Open Directly in Browser
-
-- Double-click `index.html`  
-- Or open it manually in any modern browser  
-
-> Note: Running via a local server is recommended to avoid CORS-related issues.
-
----
-
 ## 🔧 Environment Variables
 
 This project does not require any environment variables.
 
-A `.env.example` file is included for compliance but remains empty.
+But a `.env.example` file is included for compliance.
 
 ---
 
