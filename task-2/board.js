@@ -120,3 +120,4 @@ addColBtn.textContent = 'Add column';
 
 board.appendChild(addColBtn);
 }
+
