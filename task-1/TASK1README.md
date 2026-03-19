@@ -52,7 +52,7 @@ XML Parsing
 File System (fs module)
 
 📂 Project Structure
-feedwatch/
+task-1/
 ├── commands/        # CLI command implementations
 ├── lib/             # Core logic (fetcher, parser, state)
 ├── tests/           # Unit & integration tests
