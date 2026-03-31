@@ -1,1 +1,7 @@
-{}
+{}{
+  "feeds": {
+    "hn": "https://hnrss.org/frontpage",
+    "nyt": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+    "ndtv": "https://feeds.feedburner.com/ndtvnews-top-stories"
+  }
+}
