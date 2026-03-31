@@ -1,0 +1,136 @@
+{
+  "https://news.ycombinator.com/rss": [
+    "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan",
+    "https://ollama.com/blog/mlx",
+    "https://github.com/drona23/claude-token-efficient",
+    "https://idlewords.com/2026/03/artemis_ii_is_not_safe_to_fly.htm",
+    "https://www.sambent.com/the-white-house-app-has-huawei-spyware-and-an-ice-tip-line/",
+    "https://github.com/google-research/timesfm",
+    "https://alexhwoods.com/dont-let-ai-write-for-you/",
+    "https://android-developers.googleblog.com/2026/03/android-developer-verification-rolling-out-to-all-developers.html",
+    "https://www.youtube.com/watch?v=JJEyffSdBsk",
+    "https://nbailey.ca/post/router/",
+    "https://anishathalye.com/macbook-touchscreen/",
+    "https://blog.railway.com/p/incident-report-march-30-2026-accidental-cdn-caching",
+    "https://simonwillison.net/2026/Mar/30/mr-chatterbox/",
+    "https://github.com/virpo/pegboard",
+    "https://www.historytoday.com/archive/feature/original-rock-star",
+    "https://www.dhanishsemar.com/writing/bird-brains",
+    "https://aijobsreport.org/quiz",
+    "https://www.opengridworks.com",
+    "https://agentsofchaos.baulab.info/report.html",
+    "https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/",
+    "https://davidcanhelp.github.io/unit/",
+    "https://github.com/electrikmilk/cherri",
+    "https://web.ua.es/en/actualidad-universitaria/2026/marzo2026/23-31/ua-researchers-find-3-500-year-old-loom-that-reveals-key-aspects-of-textile-revolution-in-the-bronze-age.html",
+    "https://www.codingfont.com/",
+    "https://sockpuppet.org/blog/2026/03/30/vulnerability-research-is-cooked/",
+    "https://www.technologyreview.com/2026/03/30/1134780/r3-bio-brainless-human-clones-full-body-replacement-john-schloendorn-aging-longevity/",
+    "https://davidoks.blog/p/how-the-spreadsheet-reshaped-america",
+    "https://www.laphamsquarterly.org/roundtable/william-blake-remote-sea",
+    "https://claude.nagdy.me/",
+    "https://arkoinad.com/posts/apple_keychain_recovery.html"
+  ],
+  "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml": [
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/politics/iran-leaders-trump-war.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/politics/us-missile-strike-iran-sports-hall-school.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/31/world/europe/iran-war-united-states-britain-starmer.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/politics/tsa-workers-paychecks-trump-executive-order.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/senate-republicans-dhs-shutdown.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/senators-trump-airport-immigration-arrests.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/mexico-ice-detention-deaths.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/politics/trump-threats-oil-cuba-sanctions.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/politics/trump-airport-palm-beach-florida.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/upshot/trump-white-house-ballroom-plans.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/style/cpac-scene-maga.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/politics/primary-elections-maine-michigan.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/politics/mark-sanford-south-carolina-congress.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/31/world/asia/japan-cherry-blossoms-ai.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/science/nasa-astronauts-moon-americans-mood.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/technology/trump-states-ai-gavin-newsom-california.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/technology/california-ai-executive-order.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/north-dakota-facial-recognition-ai-errors-bank-fraud.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/world/europe/parma-art-heist-renoir-matisse-cezanne-italy.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/style/rich-old-money-tiktok.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/opinion/feminism-polyamory-lindy-west.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/31/opinion/trump-hormuz-turkey-dardanelles.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/world/africa/palm-sunday-attack-nigeria-dead.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/us/michigan-synagogue-attack-hezbollah.html",
+      "@_isPermaLink": "true"
+    },
+    {
+      "#text": "https://www.nytimes.com/2026/03/30/style/barbie-dream-fest-florida.html",
+      "@_isPermaLink": "true"
+    }
+  ]
+}
